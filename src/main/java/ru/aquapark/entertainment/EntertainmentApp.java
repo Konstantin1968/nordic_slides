@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EntertainmentApp {
+//    private final List<Person,Integer> personList;
     public static void main(String[] args) {
         StartConfig.start();
     }

@@ -12,7 +12,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
-public class SlidesList {
+public class SlidesList implements SlidesListInterface {
     List<Slides> slidesList;
     public void add(Slides slides) {
         slidesList.add(slides);

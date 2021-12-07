@@ -6,9 +6,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.experimental.FieldDefaults;
 
-uilder
+import java.util.Objects;
+@Data
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@Builder
 public class Person {
     String name, lastname, middleName;
     Integer height, weight, age;
-    Character sex;
+    String sex;
+    public void toPerson(Person person){
+        System.out.println( person .getName() + person.getLastname() + " прокатился с горки");
+    }
 }
